@@ -1,0 +1,94 @@
+extends java-intro.pug
+
+append head
+  title Installation and Your First Program
+
+block content
+  h1.title Installation and Your First Program
+  br
+  h4.title.is-4 What do we use to program Java?
+  .content
+    p In order to compile and run Java, the Java Development Kit (JDK) is required.
+      |  In it's most basic definition, <i>compiling</i> a program is to take text written by humans and turn it into something a computer can understand.
+      | To make life a whole lot easier, we will be using what is called an Integrated Development Environment, or "IDE" for short.
+      | An IDE lets us write, compile, and run code all in one place.
+      | In this class, we will be using the Eclipse IDE.
+
+  br
+
+  h4.title.is-4 Installing the JDK
+  .content
+    p In order to begin programming, we first have to install the Java Development Kit.
+      |  You can get the JDK from Oracle's website, <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">here</a>.
+    ol
+      li Click the download button that has the Java logo and says "Java Platform (JDK) 8u144" (the version number may be different).
+      li Click "Accept License Agreement" under the first box.
+      li Select the correct version to download. For most, the Windows x64 version will be correct.
+      li Run the downloaded program to begin installation. For most users, just clicking "next" when prompted is okay.
+      li On Windows, check that the JDK was successfully installed by looking in "C:\Program Files\Java". There should be two folders, with names containing "jdk" and a "jre".
+  
+  br
+
+  h4.title.is-4 Installing Eclipse
+  .content
+    p The next step in getting ready to program is to install an IDE.
+      |  We will be using the Eclipse IDE.
+      | Eclipse is one of the most popular Java IDEs, alongside IntelliJ Idea and Netbeans.
+      | As mentioned above, using an IDE is leaps and bounds better than hand writing and compiling code.
+      | IDEs typically come with nifty and useful features such as code completion and error detection.
+      | Eclipse is available for download from the Eclipse Foundation website, <a href="https://eclipse.org/downloads/packages/eclipse-ide-java-developers/oxygenr">here</a>.
+    ol
+      li For most Windows users, the "Windows 64-bit" download will be correct. There are also OSX and Linux versions available.
+      li The downloaded .zip file will have all you need to begin using Eclipse. There is no installation needed.
+      li Extract the contents of the .zip folder (the whole folder named "eclipse", not just the stuff inside it) into a convinient location on your computer. I recommend the "Documents" folder.
+      li Run "eclipse.exe".
+      li Upon launch, Eclipse will prompt for a workspace location. It is recommended to keep this as the default.
+      li When Eclipse opens up to the "Welcome" page, you are ready to create your first project.
+  
+  br
+
+  h4.title.is-4 Creating Your First Eclipse project
+  .content
+    p Now we can finally create our first program!
+      |  In order to begin, we need to create a new project:
+    ol
+      li Navigate to "File > New > Java Project".
+      li Name the project "Hello World".
+      li Leave the JRE settings the same, but if you have problems executing your program, try selecting "Use default JRE".
+      li Click "Finish".
+    p We now have our Eclipse Java project.
+      |  In the package explorer to the right, you can see the project folder, and can click the small arrow to view the contents of the project.
+      | Inside the project folder, there should be "JRE System Library" and "src".
+      | The <code style="color: black">src</code> folder is where all of our code goes. Right now, it's empty. Let's fix that.
+    ol
+      li Right-click the project and select "New > Package".
+      li The typical naming convention is to prefix the package name with a backwards domain name.
+        |  For example, a package created by someone at Google could be <code style="color: black">com.google.packagename</code>.
+        | Additionally, package names should only contain numbers and lowercase letters, with no spaces.
+      li Since it is unlikely that you have a domain name, let's just use <code style="color: black">me.yourname</code> for now.
+        |  For example, <code style="color: black">me.mitchell.helloworld</code>.
+    p Now that we have a package, let's create a class and add some code:
+    ol
+      li Right-click our newly created package and navigate to "New > Class".
+      li Name the class <code style="color: black">HelloWorld</code>.
+        |  There is a naming convention with classes, too.
+        | Generally, they are written in UpperCase style, with every word being capitalized.
+        | Names also must not contain spaces.
+    p After clicking "Finish", you should have something that looks like this:
+    pre: code.java
+      include ../../static/base.java
+    p Let's add some code to this and run it.
+      |  Don't worry, I'll explain what all this does in the next section.
+    p Paste this in between the curly braces:
+    pre: code.java
+      include ../../static/helloworldsnippet.java
+    p Your <code style="color: black">HelloWorld</code> class should now look something like this:
+    pre: code.java
+      include ../../static/helloworld.java
+    p Now run the file by clicking the green arrow button at the top right. At the bottom of the screen, the program should print out "Hello, World".
+    p Pretty neat, right? Okay, maybe not <i>that</i> cool, but it will get better soon.
+      |  In the next section, I'll go through this line-by-line and explain how a basic Java program works.
+    
+  br
+
+  p Next Section: <a href="https://team6657.github.io/programming-site/build/java/3.html">But, How?</a>
