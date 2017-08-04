@@ -9,7 +9,7 @@ block content
   h4.title.is-4 What do we use to program Java?
   .content
     p In order to compile and run Java, the Java Development Kit (JDK) is required.
-      |  In it's most basic definition, <i>compiling</i> a program is to take text written by humans and turn it into something a computer can understand.
+      |  In its most basic definition, <i>compiling</i> a program is to take text written by humans and turn it into something a computer can understand.
       | To make life a whole lot easier, we will be using what is called an Integrated Development Environment, or "IDE" for short.
       | An IDE lets us write, compile, and run code all in one place.
       | In this class, we will be using the Eclipse IDE.
@@ -21,11 +21,11 @@ block content
     p In order to begin programming, we first have to install the Java Development Kit.
       |  You can get the JDK from Oracle's website, <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">here</a>.
     ol
-      li Click the download button that has the Java logo and says "Java Platform (JDK) 8u144" (the version number may be different).
-      li Click "Accept License Agreement" under the first box.
-      li Select the correct version to download. For most, the Windows x64 version will be correct.
-      li Run the downloaded program to begin installation. For most users, just clicking "next" when prompted is okay.
-      li On Windows, check that the JDK was successfully installed by looking in "C:\Program Files\Java". There should be two folders, with names containing "jdk" and a "jre".
+      li Click the download button that has the Java logo and says <code style="color: black">Java Platform (JDK) 8u144</code> (the version number may be different).
+      li Click <code style="color: black">Accept License Agreement</code> under the first box.
+      li Select the correct version to download. For most, the <code style="color: black">Windows x64</code> version will be correct.
+      li Run the downloaded program to begin installation. For most users, just clicking "Next" when prompted is okay.
+      li On Windows, check that the JDK was successfully installed by looking in <code style="color: black">C:\Program Files\Java</code>. There should be two folders, with names containing "jdk" and a "jre".
   
   br
 
@@ -38,10 +38,10 @@ block content
       | IDEs typically come with nifty and useful features such as code completion and error detection.
       | Eclipse is available for download from the Eclipse Foundation website, <a href="https://eclipse.org/downloads/packages/eclipse-ide-java-developers/oxygenr">here</a>.
     ol
-      li For most Windows users, the "Windows 64-bit" download will be correct. There are also OSX and Linux versions available.
+      li For most Windows users, the <code style="color: black">Windows 64-bit</code> download will be correct. There are also OSX and Linux versions available.
       li The downloaded .zip file will have all you need to begin using Eclipse. There is no installation needed.
-      li Extract the contents of the .zip folder (the whole folder named "eclipse", not just the stuff inside it) into a convinient location on your computer. I recommend the "Documents" folder.
-      li Run "eclipse.exe".
+      li Extract the contents of the .zip folder (the whole folder named <code style="color: black">eclipse</code>, not just the stuff inside it) into a convinient location on your computer. I recommend the <code style="color: black">Documents</code> folder.
+      li Run <code style="color: black">eclipse.exe</code>.
       li Upon launch, Eclipse will prompt for a workspace location. It is recommended to keep this as the default.
       li When Eclipse opens up to the "Welcome" page, you are ready to create your first project.
   
@@ -52,16 +52,16 @@ block content
     p Now we can finally create our first program!
       |  In order to begin, we need to create a new project:
     ol
-      li Navigate to "File > New > Java Project".
-      li Name the project "Hello World".
+      li Navigate to <code style="color: black">File > New > Java Project</code>.
+      li Name the project <code style="color: black">Hello World</code>.
       li Leave the JRE settings the same, but if you have problems executing your program, try selecting "Use default JRE".
-      li Click "Finish".
+      li Click <code style="color: black">Finish</code>.
     p We now have our Eclipse Java project.
       |  In the package explorer to the right, you can see the project folder, and can click the small arrow to view the contents of the project.
-      | Inside the project folder, there should be "JRE System Library" and "src".
+      | Inside the project folder, there should be <code style="color: black">JRE System Library</code> and <code style="color: black">src</code>.
       | The <code style="color: black">src</code> folder is where all of our code goes. Right now, it's empty. Let's fix that.
     ol
-      li Right-click the project and select "New > Package".
+      li Right-click the project and select <code style="color: black">New > Package</code>.
       li The typical naming convention is to prefix the package name with a backwards domain name.
         |  For example, a package created by someone at Google could be <code style="color: black">com.google.packagename</code>.
         | Additionally, package names should only contain numbers and lowercase letters, with no spaces.
@@ -69,12 +69,12 @@ block content
         |  For example, <code style="color: black">me.mitchell.helloworld</code>.
     p Now that we have a package, let's create a class and add some code:
     ol
-      li Right-click our newly created package and navigate to "New > Class".
+      li Right-click our newly created package and navigate to <code style="color: black">New > Class</code>.
       li Name the class <code style="color: black">HelloWorld</code>.
         |  There is a naming convention with classes, too.
         | Generally, they are written in UpperCase style, with every word being capitalized.
         | Names also must not contain spaces.
-    p After clicking "Finish", you should have something that looks like this:
+    p After clicking <code style="color: black">Finish</code>, you should have something that looks like this:
     pre: code.java
       include ../../static/base.java
     p Let's add some code to this and run it.
