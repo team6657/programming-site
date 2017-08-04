@@ -9,13 +9,13 @@ Eclipse is available for download from the Eclipse Foundation website, <a href="
 Inside the project folder, there should be <code style="color: black">JRE System Library</code> and <code style="color: black">src</code>.
 The <code style="color: black">src</code> folder is where all of our code goes. Right now, it's empty. Let's fix that.</p><ol><li>Right-click the project and select <code style="color: black">New > Package</code>.</li><li>The typical naming convention is to prefix the package name with a backwards domain name. For example, a package created by someone at Google could be <code style="color: black">com.google.packagename</code>.
 Additionally, package names should only contain numbers and lowercase letters, with no spaces.</li><li>Since it is unlikely that you have a domain name, let's just use <code style="color: black">me.yourname</code> for now. For example, <code style="color: black">me.mitchell.helloworld</code>.</li></ol><p>Now that we have a package, let's create a class and add some code:</p><ol><li>Right-click our newly created package and navigate to <code style="color: black">New > Class</code>.</li><li>Name the class <code style="color: black">HelloWorld</code>. There is a naming convention with classes, too.
-Generally, they are written in UpperCase style, with every word being capitalized.
+Generally, they are written in UpperCase style, with the first letter of every word being capitalized.
 Names also must not contain spaces.</li></ol><p>After clicking <code style="color: black">Finish</code>, you should have something that looks like this:</p><pre><code class="java">package me.mitchell.helloworld;
 
 public class HelloWorld {
 
 }
-</code></pre><p>Let's add some code to this and run it. Don't worry, I'll explain what all this does in the next section.</p><p>Paste this in between the curly braces (between the the <code style="color: black">{</code> right after <code style="color: black">public class HelloWorld </code> and the <code style="color: black">}</code> at the end of the file):</p><pre><code class="java">public static void main(String[] args) {
+</code></pre><p>Let's add some code to this and run it. Don't worry, I'll explain what all this does in the next section.</p><p>Paste this in between the curly braces (the <code style="color: black">{</code> and <code style="color: black">}</code>):</p><pre><code class="java">public static void main(String[] args) {
     // Prints "Hello, World" to the terminal window.
     System.out.println("Hello, World");
 }</code></pre><p>Your <code style="color: black">HelloWorld</code> class should now look something like this:</p><pre><code class="java">package me.mitchell.helloworld;
@@ -25,4 +25,4 @@ public class HelloWorld {
         // Prints "Hello, World" to the terminal window.
         System.out.println("Hello, World");
     }
-}</code></pre><p>Now run the file by clicking the green arrow button at the top right. At the bottom of the screen, the program should print out "Hello, World".</p><p>Pretty neat, right? Okay, maybe not <i>that</i> cool, but it will get better soon. In the next section, I'll go through this line-by-line and explain how a basic Java program works.</p></div><br><p>Next Section: <a href="https://team6657.github.io/programming-site/build/java/3.html">But, How?</a></p></div></div></div></section></html>
+}</code></pre><p>Now run the file by clicking the green arrow button at the top right. This is the <code style="color: black">run<code style="color: black"> button. The text "Hello, World" should be displayed at the bottom of your screen.</p><p>Pretty neat, right? Okay, maybe not <i>that</i> cool, but it will get better soon. In the next section, I'll go through this line-by-line and explain how a basic Java program works.</p></div><br><p>Next Section: <a href="https://team6657.github.io/programming-site/build/java/3.html">But, How?</a></p></div></div></div></section></html>
