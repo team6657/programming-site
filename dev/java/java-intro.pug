@@ -1,0 +1,16 @@
+extends ../base.pug
+
+block body
+  section.hero.is-primary
+    .hero-body
+      p.title Java Introduction
+      p.subtitle A basic intro into Java, focused on development for the roboRIO system, used in the First Robotics Competition
+  section.section
+    .container
+      .columns
+        .column.is-one-quarter
+          block sidebar
+            a(href="/java/1") What is Java?
+        
+        .column
+          block content
