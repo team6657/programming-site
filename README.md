@@ -1,4 +1,4 @@
 # programming-site
 Site for programming things
 
-Currently maintained by Mitchell Nuckols
+Currently maintained by UPHS Robotics team 6657
